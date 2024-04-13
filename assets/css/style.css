@@ -296,12 +296,12 @@ body.modal-open .mm-slideout {
 }
 
 .carrers_page_custom_navbar {
-  background-color: #fff !important;
+  background-color: #ffffff !important;
   border-bottom: 0;
 }
 
 .contact_page_custom_navbar {
-  background-color: #fff !important;
+  background-color: #ffffff !important;
   border-bottom: 0;
   position: fixed !important;
 }
@@ -323,16 +323,7 @@ body.modal-open .mm-slideout {
   justify-content: center;
   align-items: center;
 }*/
-.layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #0c1738cc;
-  opacity: 0.8;
-}
-
+/*
 .header_slider_parent.header_slider {
   position: absolute;
   top: 0;
@@ -345,7 +336,78 @@ body.modal-open .mm-slideout {
   justify-content: center;
   align-items: center;
 }
+*/
 
+.header_slider_parent {
+  position: relative;
+}
+
+.header_slider_parent .overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c1738cc;
+  opacity: 95%;
+  z-index: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+
+.header_slider_parent .Welding-wonders-content {
+  padding: 20px;
+}
+
+.header_slider_parent .container {
+  position: relative;
+  z-index: 1;
+}
+
+.header_slider_parent .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.about_atta_holding {
+  position: relative;
+}
+
+.about_atta_holding .overlay2 {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000cc;
+  opacity: 80%;
+  z-index: 0;
+  font-size: 50px;
+}
+
+.about_atta_holding .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about_atta_holding .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
 .header_slider_parent .header_slider {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
@@ -356,6 +418,8 @@ body.modal-open .mm-slideout {
   height: 64px;
   border: 1px solid #fff;
   border-radius: 50%;
+  margin-right: 71px;
+  margin-left: 71px;
 }
 .slider_item .overlay h3 {
   z-index: 1000 !important;
@@ -3977,6 +4041,17 @@ body.modal-open .mm-slideout {
     display: block;
     margin: auto;
   }
+  .video-icon i {
+    font-size: 10px;
+    padding: 5%;
+    margin-bottom: 40px;
+    padding-bottom: 45px;
+    margin-right: 10px;
+  }
+  .video-icon .fas {
+    margin-bottom: 15px;
+    padding: 3%;
+  }
   .upper_footer .social ul {
     justify-content: center !important;
     margin-top: 15px;
@@ -4005,6 +4080,11 @@ body.modal-open .mm-slideout {
     width: 50px;
     height: 50px;
   }
+  .header_slider_parent .header_slider .slick-arrow {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
   .header_slider_parent .header_slider .slick-prev {
     left: 10px;
     top: unset;
@@ -4404,8 +4484,8 @@ button:hover {
   flex-direction: row;
   border: 1px solid black;
   border-radius: 30px;
-  width: 95%;
-  height: 100%;
+  width: 100%;
+  height: 300px;
   margin: 10px auto;
   background-color: #1d1f22;
 }
@@ -4414,11 +4494,10 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  text-align: center;
+  padding: 15px;
   width: 100%;
-}
-.part hr {
-  margin-bottom: 50px;
+  margin-top: 25px;
 }
 
 .part img {
@@ -4428,43 +4507,90 @@ button:hover {
 }
 
 .number {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 68px;
   margin-top: 10px;
   color: #ffffff;
-}
-.parts .part p {
-  font-size: 16px;
-}
-.part p {
-  margin-top: 10px;
-  text-align: center;
-  color: #ffffff;
-  font-size: 12px;
 }
 
+.part p {
+  margin-top: 10px;
+
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500px;
+  font-size: 20px;
+  line-height: 27.32px;
+}
+.content-section {
+  background-color: #1d1f22;
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 30px;
+  height: 300;
+}
+.col-md-3 .part {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.social li {
+  margin-right: 10px;
+}
+
+.col-md-3:not(:last-child) .part::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 65%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.hide-icon i {
+  display: none;
+}
+.fas {
+  margin-left: 5px;
+  height: 6.7px;
+  width: 11.64px;
+  font-size: 13px;
+}
+.separator6 {
+  border-top: 1px solid #5d6160;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  opacity: 10%;
+}
+.separator5 {
+  border-top: 1px solid #5d6160;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  opacity: 10%;
+}
 hr {
-  width: 1px;
-  border: 1px solid #ddd;
-  height: 150px;
+  border: 1px solid #ffffff;
+  opacity: 15%;
+  height: 165px;
   margin-top: 5%;
-  color: #ffffff26;
 }
 .video-section {
-  width: 87%;
-  height: 90%;
+  width: 100%;
+  height: 586px;
   margin: 0 auto;
   position: relative;
   margin-top: 8%;
+  background-color: #f4f4f6;
 }
 
 .video-section img {
   width: 100%;
-  height: 100%;
+  height: 586px;
   object-fit: cover;
   border-radius: 30px;
 }
-
 .text-container {
   position: absolute;
   top: 50%;
@@ -4476,6 +4602,7 @@ hr {
 }
 .text-container p {
   font-size: 16px;
+  font-weight: 500;
   text-align: center;
   color: #f4f4f6;
   line-height: 21.76px;
@@ -4483,16 +4610,11 @@ hr {
 }
 
 .text-container h3 {
+  font-weight: 600;
+  line-height: 21.76px;
   font-size: 32px;
   line-height: 43.52px;
   margin-bottom: 10px;
-  z-index: 2;
-  color: #ffffff;
-}
-
-.text-container p {
-  font-size: 18px;
-  margin-bottom: 6%;
   z-index: 2;
   color: #ffffff;
 }
@@ -4516,11 +4638,6 @@ hr {
   color: #fff;
 }
 
-.video-section img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
 .video-section::after {
   content: "";
   position: absolute;
@@ -4534,6 +4651,7 @@ hr {
   z-index: 1;
   overflow: hidden;
 }
+
 .slider_item::after {
   content: "";
   position: absolute;
@@ -4568,12 +4686,7 @@ hr {
   background-color: #fafbfa;
   border-radius: 30%;
 }
-.with-background {
-  background-color: black;
-}
-.video-section {
-  background-color: #f4f4f6;
-}
+
 .card-body img {
   border-radius: 10px;
   background-color: #ffffff;
@@ -4942,7 +5055,7 @@ textarea::placeholder {
   background-color: #1d1f22;
   padding-top: 4%;
   padding-bottom: 4%;
-
+  height: 269px;
   width: 100%;
 }
 
@@ -4952,19 +5065,20 @@ textarea::placeholder {
   color: #ffffff;
 }
 .Getnews p {
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 500;
   color: #9c9c9c;
   margin-left: 15px;
-  margin-top: 15px;
+  margin-top: 2%;
 }
 .Getnews h4 {
-  font-size: 26px;
+  font-size: 33px;
+  font-weight: 500;
   color: #ffffff;
   margin-left: 15px;
+  margin-top: 3%;
 }
-.video-section img {
-  border-radius: 30px;
-}
+
 .parts hr {
   padding-bottom: 80px;
   padding-top: 10px;
@@ -5000,6 +5114,7 @@ textarea::placeholder {
   left: 10px;
   opacity: 1;
   transition: opacity 0.3s ease;
+  line-height: 2;
 }
 
 .mission-image-container:hover .mission-layer p {
@@ -5012,9 +5127,9 @@ textarea::placeholder {
 
 .mission-layer .paragraph {
   position: absolute;
-  bottom: 10px;
+  bottom: 40px;
   left: 10px;
-  width: 80%;
+  width: 85%;
   color: white;
   text-align: left;
   opacity: 0;
@@ -5050,43 +5165,47 @@ textarea::placeholder {
 .mission-text::before {
   content: "—";
   position: absolute;
-  top: -56%;
-  left: 44%;
+  top: -32%;
+  left: 41%;
   transform: translate(-50%, -50%);
-  font-size: 38px;
-  margin-left: 10px;
-  padding: 3%;
+  font-size: 33px;
+  margin-left: 9px;
+  padding: 1%;
+  font-weight: 100;
+  width: 40px;
 }
 .mission-text::after {
   content: "—";
   position: absolute;
-  top: -60%;
+  top: -34%;
   left: 12%;
   transform: translate(-50%, -50%);
+  font-weight: 100;
   font-size: 60px;
   margin-left: 10px;
-  padding: 3%;
+  padding: 2%;
 }
 
 .paragraph::before {
   content: "—";
   position: absolute;
-  top: -7%;
-  left: 17%;
+  top: -5%;
+  left: 15%;
   transform: translate(-50%, -50%);
-  font-size: 38px;
+  font-size: 33px;
   margin-left: 5px;
 }
 .paragraph::after {
   content: "—";
   position: absolute;
-  top: -8%;
+  top: -6%;
   left: 5%;
   transform: translate(-50%, -50%);
-  font-size: 60px;
+  font-size: 70px;
+  font-weight: 100;
   margin-left: 5px;
 }
-.mission-image-container img {
+*/ .mission-image-container img {
   width: 100%;
   height: auto;
   transition: transform 0.3s ease;
@@ -5211,6 +5330,7 @@ textarea::placeholder {
 }
 .base-layer .text-layer span {
   font-size: 10px;
+  font-weight: 100px;
 }
 .csr-efforts-section:hover .base-layer {
   background-color: #ffffff;
@@ -5235,6 +5355,11 @@ textarea::placeholder {
 .csr-efforts-section:hover .csr-efforts-overlay .read-more i {
   color: #243770;
   margin-left: 9px;
+  font-size: bold;
+}
+.csr-efforts-section .csr-efforts-overlay .read-more {
+  font-size: bold;
+  margin-bottom: 5%;
 }
 .csr-efforts-section:hover .csr-efforts-overlay * {
   color: #1d1f22;
@@ -5264,9 +5389,11 @@ textarea::placeholder {
   display: block;
   z-index: 2;
 }
-.our-mission {
+.container .our-mission {
   width: 100%;
-  margin-bottom: 8%;
+  height: 1000px;
+  margin-bottom: -22%;
+
   margin-top: 6%;
   justify-content: center;
   text-align: center;
@@ -5307,7 +5434,7 @@ textarea::placeholder {
 }
 
 .custom_navbar.scroll_bg {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .custom_navbar.scroll_bg .logo img {
@@ -5325,7 +5452,7 @@ textarea::placeholder {
 }
 
 .custom_navbar.scrolled {
-  height: 94px;
+  height: 100px;
 }
 
 .logo img {
@@ -5367,7 +5494,18 @@ textarea::placeholder {
   transition: background-color 0.6s ease;
   z-index: 1000;
 }
-
+.text-slider p {
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 21.86px;
+}
+.text-slider h3 {
+  font-size: 48px;
+  font-weight: 600px;
+  color: #ffffff;
+  margin-bottom: 4%;
+  line-height: 65.57px;
+}
 .custom_navbar.scroll_bg {
   background-color: #ffffff !important;
 }
@@ -5439,6 +5577,72 @@ textarea::placeholder {
 .footer {
   flex: 1;
 }
+.custom-button {
+  background-color: #ffffff;
+  border: none;
+  color: #1d1f22;
+  line-height: 24.59px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  width: 13%;
+  cursor: pointer;
+  border-radius: 40px;
+}
+.custom-button:hover {
+  color: #ffffff;
+  background-color: #243770;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 80%;
+  padding: 2%;
+}
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .mission-image-container {
+    height: auto;
+    margin-bottom: 60%;
+  }
+  .mission-text {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 27%;
+    margin-left: 3%;
+  }
+  .paragraph {
+    margin-bottom: 27%;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-right: 5px;
+  }
+
+  .mission-layer p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    line-height: 2;
+  }
+}
+@media screen and (min-width: 430px) and (max-width: 932px) {
+  .mission-image-container {
+    height: auto;
+    margin-bottom: 35%;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -5450,8 +5654,48 @@ textarea::placeholder {
   hr {
     display: none;
   }
+  .text-container h3 {
+    line-height: 1.5;
+  }
+  @media screen and (max-width: 767px) {
+    .col-md-3:not(:last-child) .part::after {
+      display: none;
+    }
+  }
+
+  .col-md-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .part {
+    text-align: center;
+  }
+
+  .part img {
+    max-width: 100%;
+  }
+  .about_atta_holding {
+    padding-bottom: 0px;
+  }
+
   .text-container {
     width: 100%;
+    padding: 10px;
+  }
+
+  .text-slider p {
+    font-size: 15px;
+    font-weight: 500px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .text-slider h3 {
+    font-size: 23px;
+    font-weight: 600px;
+    color: #ffffff;
+    margin-bottom: 7%;
+    line-height: 1.5;
     padding: 10px;
   }
 
@@ -5504,6 +5748,18 @@ textarea::placeholder {
   .separator2 {
     width: 4%;
     margin-bottom: 10px;
+  }
+  .custom-button {
+    width: 38%;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .col-md-6 .Getnews {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about_atta_holding {
+    padding-top: 20%;
   }
   .video-icon {
     display: flex;
@@ -5560,6 +5816,7 @@ textarea::placeholder {
   .h3.card-title,
   .text-layer p {
     font-size: 14px;
+    font-weight: 100;
   }
   .slide:not(:first-child) {
     display: none;
@@ -5607,47 +5864,47 @@ textarea::placeholder {
     .our-mission {
       max-height: calc(100vh - 100px);
     }
-  }
 
-  .our-mission {
-    display: flex;
-    flex-direction: column;
-
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  @media only screen and (max-width: 768px) {
-    .mission-image-container {
-      border-radius: 0 !important;
-    }
-    .csr-efforts-section {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .csr-slider2 {
+    .our-mission {
       display: flex;
-      flex-wrap: wrap;
-    }
-    .row.our-mission {
-      display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
     }
 
-    .col-md-4.swiper-slide {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    .mission-image-container {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-    .ab_link {
-      display: flex;
-      justify-content: center;
+    @media only screen and (max-width: 768px) {
+      .mission-image-container {
+        border-radius: 0 !important;
+      }
+      .csr-efforts-section {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .csr-slider2 {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .row.our-mission {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .col-md-4.swiper-slide {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .mission-image-container {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .ab_link {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 }

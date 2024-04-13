@@ -218,7 +218,7 @@ body.modal-open .mm-slideout {
 
 /* ================================================================ */
 .custom_navbar {
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.07);
   padding: 24px 0;
   position: fixed;
@@ -2545,14 +2545,7 @@ body.modal-open .mm-slideout {
 .footer .footer_top_world p span {
   font-weight: 700;
 }
-.footer .footer_links {
-  margin-top: 80px;
-}
-.footer .footer_links .links {
-  padding: 0 35px 0 70px;
-  position: relative;
-  min-height: 300px;
-}
+
 .footer .footer_links .links::after {
   content: "";
   position: absolute;
@@ -2570,7 +2563,6 @@ body.modal-open .mm-slideout {
   font-weight: 700;
   line-height: 166.667%;
   text-transform: uppercase;
-  margin-bottom: 35px;
 }
 .footer .footer_links .links a {
   color: #fff;
@@ -2578,7 +2570,7 @@ body.modal-open .mm-slideout {
   font-style: normal;
   font-weight: 300;
   line-height: 187.5%;
-  margin-bottom: 14px;
+
   display: inline-block;
   position: relative;
   padding-bottom: 5px;

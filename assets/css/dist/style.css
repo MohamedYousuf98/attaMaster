@@ -445,7 +445,7 @@ p {
   text-align: center;
   margin-bottom: 30px;
 }
-.side-nav .side-links {
+.side-nav .side- {
   height: 100%;
   overflow: auto;
   margin-top: 10px;
@@ -1658,14 +1658,12 @@ p {
   font-size: 1.1rem;
 }
 .footer .footer_links h5 {
-  margin-bottom: 32px;
 }
 .footer .footer_links ul {
   align-items: center;
 }
 .footer .footer_links ul li {
   width: 100%;
-  margin-bottom: 24px;
 }
 .footer .footer_links ul li a {
   color: #fff;
