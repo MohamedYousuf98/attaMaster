@@ -22,8 +22,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.css"
     integrity="sha512-nNatP1G6CEh43irXY/GN4cDcLRX/R0jAYAV/ulFZcotSXcuIQE5Do4TuDOYNAD2SCIpmIbaYSllyjTysSCkpEw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+    
   <!-- for animation -->
   <link rel="stylesheet" href="./assets/css/aos.css">
 
@@ -38,89 +37,83 @@
 
 <body >
 
-
-  <div class="custom_navbar"style="background-color:transparent">
+ 
+  <div class="custom_navbar" style="background-color: transparent;">
     <div class="wrapper">
-      <div class="container">
+      <div class="container-fluid p-100">
         <div class="row align-items-center">
           <div class="col-sm-12 col-md-3 col-lg-2">
             <div class="logo">
-              <a href="">
+              <a href="#">
                 <img src="./assets/images/logoblue.svg" alt="">
               </a>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3 col-lg-10">
-            <div class="links ">
+          <div class="col-sm-12 col-md-9 col-lg-10">
+            <div class="links">
               <ul class="list-unstyled d-flex align-items-center justify-content-center">
-                <li class="list_item active" ><a class="list_link " href="">Home</a></li>
-                <li class="list_item"><a class="list_link"  href="">About us</a></li>
-                <li class="list_item"><a class="list_link"  href="">CSR</a></li>
+                <li class="list_item active"><a class="list_link" href="#">Home</a></li>
+                <li class="list_item"><a class="list_link" href="#">About us</a></li>
+                <li class="list_item"><a class="list_link" href="#">CSR</a></li>
                 <li class="list_item dropdown">
-                  <a class="list_link " href="#" role="button" id="companiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Companies  <i class="  fas fa-chevron-down"></i></a>
+                  <a class="list_link" href="#" role="button" id="companiesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Companies <i class="fas fa-chevron-down"></i></a>
                   <div class="dropdown-menu" aria-labelledby="companiesDropdown">
                     <a class="dropdown-item" href="#">Company 1</a>
                     <a class="dropdown-item" href="#">Company 2</a>
                     <a class="dropdown-item" href="#">Company 3</a>
                   </div>
                 </li>
-                
-                
-                
                 <li class="list_item dropdown">
-                  <a class="list_link "  href="#" role="button" id="productServicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Product & Services  <i class="  fas fa-chevron-down"></i></a>
+                  <a class="list_link" href="#" role="button" id="productServicesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Product & Services <i class="fas fa-chevron-down"></i></a>
                   <div class="dropdown-menu" aria-labelledby="productServicesDropdown">
-                
                     <a class="dropdown-item" href="#">Product 1</a>
                     <a class="dropdown-item" href="#">Product 2</a>
                     <a class="dropdown-item" href="#">Product 3</a>
                   </div>
                 </li>
                 <li class="list_item dropdown">
-                  <a class="list_link "href="#" role="button" id="mediaCenterDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media Center  <i class="  fas fa-chevron-down"></i></a>
+                  <a class="list_link" href="#" role="button" id="mediaCenterDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media Center <i class="fas fa-chevron-down"></i></a>
                   <div class="dropdown-menu" aria-labelledby="mediaCenterDropdown">
-                  
                     <a class="dropdown-item" href="#">Media 1</a>
                     <a class="dropdown-item" href="#">Media 2</a>
                     <a class="dropdown-item" href="#">Media 3</a>
                   </div>
                 </li>
-                <li class="list_item"><a class="list_link" href="">Careers</a></li>
-               
+                <li class="list_item"><a class="list_link" href="#">Careers</a></li>
               </ul>
               <div class="contact_btn mr-2 ml-2">
-                <a href="">Contact</a>
+                <a href="#">Contact</a>
               </div>
-              
-              <div class="notification-container" >
+              <div class="notification-container">
                 <svg class="custom-icon" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.408203 0.878857C0.408203 1.29029 0.749775 1.64214 1.15177 1.64214H4.54649L6.15363 12.671C6.36492 14.0973 7.11792 14.9913 8.57463 14.9913H20.2969C20.6882 14.9913 21.0298 14.6699 21.0298 14.2383C21.0298 13.8063 20.6882 13.4849 20.2969 13.4849H8.7452C8.17263 13.4849 7.8212 13.0829 7.73077 12.4704L7.57006 11.4157H20.3166C21.7832 11.4157 22.5366 10.5114 22.7475 9.07528L23.5511 3.76143C23.5724 3.63524 23.5858 3.50786 23.5913 3.38C23.5913 2.89786 23.2296 2.56614 22.6772 2.56614H6.28435L6.08335 1.29071C5.98306 0.517143 5.70192 0.125 4.67763 0.125H1.15135C0.749775 0.125 0.408203 0.476857 0.408203 0.878857ZM7.7312 18.2459C7.7312 19.16 8.45463 19.8731 9.36835 19.8731C9.58254 19.8749 9.79494 19.834 9.99317 19.7529C10.1914 19.6717 10.3715 19.5519 10.523 19.4005C10.6744 19.249 10.7942 19.0689 10.8754 18.8707C10.9565 18.6724 10.9974 18.46 10.9956 18.2459C10.9965 18.0319 10.9551 17.8199 10.8736 17.6221C10.7922 17.4242 10.6723 17.2445 10.521 17.0932C10.3697 16.9419 10.19 16.8221 9.99215 16.7406C9.79431 16.6591 9.5823 16.6177 9.36835 16.6186C8.45463 16.6186 7.7312 17.342 7.7312 18.2459ZM17.1229 18.2459C17.1229 19.16 17.8562 19.8731 18.7601 19.8731C19.6742 19.8731 20.3972 19.16 20.3972 18.2459C20.3972 17.3416 19.6742 16.6186 18.7601 16.6186C17.8562 16.6186 17.1229 17.342 17.1229 18.2459Z" fill="white"/>
                 </svg>
                 <div class="notification-badge">3</div>
               </div>
-              
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-  <div class="header_slider_parent ">
+  
+ 
+  <div class=" header_slider_parent">
     <div class="header_slider">
       <div class="slider_item">
+        
         <div class="card_img">
           <div class="img_parent">
             <img src="assets/images/1.jpg" alt="">
             
             <div class="overlay2 ">
-              <div class=" container text-slider">
+              <div class=" container-fluid p-100">
+                <div class="text-slider ">
                 <p>We Are Always open for world. </p>
                 <h3>Welding Wonders: <br>
                   Crafting Excellence in Every Fusion</h3>
                   <button class="custom-button">Learn More</button>
-
+                </div>
               </div>
             </div>
           </div>
@@ -131,7 +124,7 @@
           <div class="img_parent">
             <img src="./assets/images/header2.png" alt="">
             <div class="overlay2 ">
-              <div class=" container text-slider">
+              <div class=" container-fluid p-100 text-slider">
                 <p >We Are Always open for world. </p>
                 <h3>Welding Wonders: <br>
                   Crafting Excellence in Every Fusion</h3>
@@ -146,12 +139,13 @@
           <div class="img_parent">
             <img src="assets/images/1.jpg" alt="">
             <div class="overlay2 ">
-              <div class=" container text-slider">
+              <div class=" container-fluid p-100">
+                <div class="text-slider ">
                 <p>We Are Always open for world. </p>
                 <h3>Welding Wonders: <br>
                   Crafting Excellence in Every Fusion</h3>
                   <button class="custom-button">Learn More</button>
-
+                </div>
               </div>
             </div>
           </div>
@@ -162,12 +156,13 @@
           <div class="img_parent">
             <img src="./assets/images/header3.png" alt="">
             <div class="overlay2 ">
-              <div class=" container text-slider">
+              <div class=" container-fluid p-100">
+                <div class="text-slider ">
                 <p>We Are Always open for world. </p>
                 <h3>Welding Wonders: <br>
                   Crafting Excellence in Every Fusion</h3>
                   <button class="custom-button">Learn More</button>
-
+                </div>
               </div>
             </div>
           </div>
@@ -178,12 +173,14 @@
           <div class="img_parent">
             <img src="assets/images/1.jpg" alt="">
             <div class="overlay2 ">
-              <div class=" container text-slider">
+              <div class=" container-fluid p-100">
+                <div class="text-slider ">
                 <p  >We Are Always open for world. </p>
                 <h3 >Welding Wonders: <br>
                   Crafting Excellence in Every Fusion</h3>
                   <button class="custom-button">Learn More</button>
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -194,7 +191,8 @@
           <div class="img_parent">
             <img src="./assets/images/header3.png" alt="">
             <div class="overlay2 ">
-              <div class=" container text-slider">
+              <div class=" container-fluid p-100">
+                <div class="text-slider ">
                 <p >We Are Always open for world. </p>
                 <h3 >Welding Wonders: <br>
                   Crafting Excellence in Every Fusion</h3>
@@ -204,16 +202,18 @@
           </div>
         </div>
       </div>
+      </div>
+    </div>
     </div>
   </div>
-</div>
+ 
+  
 
-
-<!-- Second Code Snippet -->
-<div class="about_atta_holding p-5">
-  <div class="overlay2"></div> <!-- Add overlay div here -->
+<!-- about_atta_holding -->
+<div class="about_atta_holding mb-7">
+  <div class="overlay2"></div> 
   <div class="background-image" style="background-image: url('assets/images/111.png');"></div>
-  <div class="container">
+  <div class="container-fluid p-100 ">
     <div class="section_header">
       <h5>This is Atta Holding</h5>
     </div>
@@ -304,16 +304,14 @@
     </div>
   </div>
 </div>
-    
-<section class="container our-mission mt-5">
-  <div class="row  our-mission ">
+<section class="container-fluid p-100 mb-5">
+  <div class="row our-mission g-0">
     <div class="col-md-4">
-      <div class="mission-image-container" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px; height: 600px; ">
-        <img src="assets/images/33.jpeg" alt="Mission 1">
-        <div class="mission-layer">
-          
+      <div class="mission-image-container d-flex flex-column justify-content-end align-items-center"style="border-top-left-radius: 30px; border-bottom-left-radius: 30px; height: 600px; ">
+        <img src="assets/images/33.jpeg" alt="Mission 1" class="">
+        <div class="mission-layer text-center p-3">
           <p class="mission-text">Our Mission</p>
-          <p class="paragraph"><span>Our Mission</span> <br> Atta Holding's Journey Is A Testament To Decades Of Resilience, Innovation, And Community Commitment. From Our Humble Beginnings, We Have Evolved Into A Global Force, Dedicated To Enriching Lives, Fostering Progress, And Leaving A Positive Imprint On The Tapestry Of Our Shared History.</p>
+          <p class="paragraph"><span>Our Mission</span><br>Atta Holding's Journey Is A Testament To Decades Of Resilience, Innovation, And Community Commitment. From Our Humble Beginnings, We Have Evolved Into A Global Force, Dedicated To Enriching Lives, Fostering Progress, And Leaving A Positive Imprint On The Tapestry Of Our Shared History.</p>
           <div class="arrow-icon-container">
             <i class="fa-solid fa-arrow-right"></i>
           </div>
@@ -321,12 +319,11 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="mission-image-container" style="height: 600px;">
-        <img src="assets/images/44.jpeg" alt="Mission 2">
-     
-        <div class="mission-layer">
+      <div class="mission-image-container d-flex flex-column justify-content-end align-items-center" style="height:600px">
+        <img src="assets/images/44.jpeg" alt="Mission 2" class="">
+        <div class="mission-layer text-center p-3">
           <p class="mission-text">Our Values</p>
-          <p class="paragraph"><span>Our Values</span> <br> At Atta Holding, Our Values Form The Cornerstone Of Our Identity, Driving Every Decision And Action. Integrity, Innovation, And A Steadfast Commitment To Social Responsibility Guide Us As We Navigate Challenges, Promote Inclusivity, And Contribute To The Greater Good</p>
+          <p class="paragraph"><span>Our Values</span><br>At Atta Holding, Our Values Form The Cornerstone Of Our Identity, Driving Every Decision And Action. Integrity, Innovation, And A Steadfast Commitment To Social Responsibility Guide Us As We Navigate Challenges, Promote Inclusivity, And Contribute To The Greater Good</p>
           <div class="arrow-icon-container">
             <i class="fa-solid fa-arrow-right"></i>
           </div>
@@ -334,13 +331,15 @@
       </div>
     </div>
     <div class="col-md-4">
-      <div class="mission-image-container" style="border-top-right-radius: 30px; border-bottom-right-radius: 30px; height: 600px;">
-        <img src="assets/images/55.png" alt="Mission 3">
-        <div class="line-container">
-          <div class="line line-1"></div>  <div class="line line-2"></div>  </div>
-        <div class="mission-layer">
+      <div class="mission-image-container d-flex flex-column justify-content-end align-items-center"style="border-top-right-radius: 30px; border-bottom-right-radius: 30px; height: 600px;">
+        <img src="assets/images/55.png" alt="Mission 3" class="">
+        <div class="line-container d-flex flex-column align-items-center">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+        </div>
+        <div class="mission-layer text-center p-3">
           <p class="mission-text">Our History</p>
-          <p class="paragraph"><span>Our History</span> <br> Atta Holding's Journey Is A Testament To Decades Of Resilience, Innovation, And Community Commitment. From Our Humble Beginnings, We Have Evolved Into A Global Force, Dedicated To Enriching Lives, Fostering Progress, And Leaving A Positive Imprint On The Tapestry Of Our Shared History.</p>
+          <p class="paragraph"><span>Our History</span><br>Atta Holding's Journey Is A Testament To Decades Of Resilience, Innovation, And Community Commitment. From Our Humble Beginnings, We Have Evolved Into A Global Force, Dedicated To Enriching Lives, Fostering Progress, And Leaving A Positive Imprint On The Tapestry Of Our Shared History.</p>
           <div class="arrow-icon-container">
             <i class="fa-solid fa-arrow-right"></i>
           </div>
@@ -350,10 +349,11 @@
   </div>
 </section>
 
-  
 
 
-<div class="container content-section">
+
+<div class="container-fluid p-100 ">
+  <div class="content-section">
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <div class="part">
@@ -387,10 +387,12 @@
       </div>
     </div>
   </div>
+  </div>
+
   
 
   
-    <section class=container>
+    <section class= "container-fluid p-100 mb-5">
     <div class="video-section ">  <img src="assets/images/video upda.png" alt="Image">
       <div class=" text-container">
         <h3>Atta Holding's Journey of Compassionate Corporate Responsibility</h3>
@@ -403,9 +405,10 @@
     </section>
     
 
-    <section class="container-fluid p-100 certifications mt-5" style="background:none;">
-      <div class="row cer-awards justify-content-center">
-        <div class="col-md-11">
+    <section class="container-fluid  p-100 " >
+    <div class=" certifications mt-5" style="background:none;">
+      <div class="row cer-slider justify-content-center">
+        <div class="col-md-12">
           <div class="card border-0 p-3 mb-5 rounded-5">
             <div class="card-body">
               <h3 class="card-title mb-2 mt-5 text-left">Certifications & Awards</h3>
@@ -428,12 +431,13 @@
               </div>
           </div>
         </div>
+        </div>
       </div>
     </section>
-
-  
     
-    <div class="container">
+    
+    <div class="container-fluid ">
+      <div class="CSR-efforts ">
       <div class="d-flex justify-content-between align-items-center">
         <h3 class="card-title mb-2 text-left">CSR efforts</h3>
         <div class="slider-arrows">
@@ -441,24 +445,26 @@
           <button class="next-arrow"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>
-      <div class="separator1" ></div>
-      <div class="separator2"></div>
+      <div class="seprator-csr">
+      <div class="separator8" ></div>
+      <div class="separator9"></div>
+    </div>
       <div class="row csr-slider2">
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-3">
           <div class="csr-efforts-section">
             <span class="society-text">Society</span>
             <img src="assets/images/s4.1.png" alt="Image 1">
-            <div class="base-layer"></div>  <div class="text-layer">  <p>08.08.2023 <br> <span>We are thrilled to announce that ATTA Holding has been awarded the Gold Tier Award for Sustaina..</p>  </div>
+            <div class="base-layer"></div>  <div class="text-layer"><p>08.08.2023 <br> <span>We are thrilled to announce that ATTA Holding has been awarded the Gold Tier Award for Sustaina..</p>  </div>
          
             <div class="csr-efforts-overlay">
               <p class="overlay-text1">08.08.2023</p>
               <p class="overlay-text">We are thrilled to announce that ATTA Holding has been awarded the Gold Tier Award for Sustaina..</p>
-              <a href="#" class="read-more mb-5 fw-bold" >Read More   <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#" class="read-more mb-5 fw-bold" >Read More <i class="fa-solid fa-arrow-right"></i></a>
               <div class="overlay-layer"></div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-3">
           <div class="csr-efforts-section">
             <span class="society-text">Society</span>
             <img src="assets/images/s4.2.png" alt="Image 1">
@@ -471,7 +477,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-3">
           <div class="csr-efforts-section">
             <span class="society-text">Society</span>
             <img src="assets/images/s4.1.png" alt="Image 1">
@@ -484,7 +490,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-3">
           <div class="csr-efforts-section">
             <span class="society-text">Society</span>
             <img src="assets/images/s4.2.png" alt="Image 1">
@@ -497,11 +503,11 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-3">
           <div class="csr-efforts-section" style="color: #ffffff;">
             <span class="society-text" >Society</span>
             <img src="assets/images/s4.1.png" alt="Image 1">
-            <div class="base-layer mb-2"></div>  <div class="text-layer mb-2">  <p>08.08.2023 <br> <span>We are thrilled to announce that ATTA Holding has been awarded the Gold Tier Award for Sustaina..</p>  </div>
+            <div class="base-layer mb-3"></div>  <div class="text-layer">  <p>08.08.2023 <br> <span>We are thrilled to announce that ATTA Holding has been awarded the Gold Tier Award for Sustaina..</p>  </div>
             <div class="csr-efforts-overlay">
               <p class="overlay-text1">08.08.2023</p>
               <p class="overlay-text">We are thrilled to announce that ATTA Holding has been awarded the Gold Tier Award for Sustaina..</p>
@@ -511,38 +517,36 @@
           </div>
         </div>
       </div>
+      </div>
       <!-- Add "see all" link here -->
       <a href="your-all-certifications-link" class="see-all-link1">SEE ALL</a>
     </div>
     
 
     
-    <div class="container custom-container ">
+    <div class="container-fluid p-100 ">
+      <div class="custom-container">
       <div class="row">
-        <div class="col-md-6 Getnews ">
+        <div class="col-md-6 Getnews ml-2">
           <h4>Get news & updates</h4>
           <p>write your email address to get news from <br> ATTA Holding.</p>
         </div>
         <div class="col-md-6 updates ">
-          <div class="input-group mb-1 mt-4 mr-2">
-            <input type="text" class="form-control" style="border-radius: 25px;" placeholder="Name@mail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group mb-1 mt-4 mr-3">
+            <input type="text" class="form-control" style="border-radius: 25px; margin-right: 1px;" placeholder="Name@mail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
-              <button class="btn btn-primary" type="button">SIGN UP</button>
+              <button class="btn btn-primary " type="button">SIGN UP</button>
             </div>
+          </div>
           </div>
         </div>
       </div>
     </div>
     
-    
-    
-
-    
-    
-    
 
 
-    <div class="container get_toutch rounded-container">
+    <div class="container-fluid p-100 ">
+    <div class="  get_toutch ">
       <div class="row">
         <div class="col-md-5 get_in_touch" style="background-color: #F4F4F6;">
           <h3>Get in touch</h3>
@@ -607,13 +611,14 @@
             <button type="submit" class="btn btn-primary p-3" >Send a Message</button>
           </form>
         </div>
+        </div>
       </div>
     </div>
  
 
     
     <footer class="footer">
-      <div class="container">
+      <div class="container-fluid p-100">
         <div class="row align-items-center upper_footer">
           <div class="col-lg-4 col-md-6 col-sm-12 text-start">
             <div class="logo">
@@ -640,7 +645,7 @@
       
         <div class="separator5"></div>
         
-        <div class="container">
+        <div class="container-fluid ">
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12 text-start">
               <div class="footer_links">
@@ -701,7 +706,7 @@
       <div class="separator5"></div>
       
       <div class="copy_right ">
-        <div class="container">
+        <div class="container-fluid p-100 ">
           <div class="section_header d-flex align-items-center justify-content-between">
             <h5>© 2024, All Rights Reserved</h5>
             <h6>Licenses</h6>
@@ -713,17 +718,17 @@
       </div>
     
       <div class="developed_by">
-        <div class="container">
+        <div class="container-fluid">
           <h5>Developed and Designed by <a href="">INTCORE</a></h5>
         </div>
       </div>
     </footer>
       
     
-    
-    
 
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
@@ -751,7 +756,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
   <script src="./assets/js/jquery.counterup.min.js"></script>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-KlwEjk89QAP+QqC3EX2WBG8jEMgli+lLFfwYoBOO45+c80eRE9T5q+2BrNGho3Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXGVNKNWbMaAldyoQuLtBRuhYjQWS3C+Y58VW3BWuhIWXgmYlXs2qSY1Q==" crossorigin="anonymous"></script>
+  
   <!-- swiper slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.js"></script>
 

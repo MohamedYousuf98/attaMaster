@@ -337,7 +337,46 @@ body.modal-open .mm-slideout {
   align-items: center;
 }
 */
+.custom_navbar {
+  background-color: transparent;
+}
 
+.list_item {
+  margin-right: 10px;
+}
+
+.list_link {
+  color: #171d1c;
+}
+
+.list_link:hover {
+  color: #243770;
+}
+
+.dropdown-menu {
+  min-width: 180px;
+}
+
+.dropdown-menu .dropdown-item {
+  border-bottom: 1px solid #ddd;
+
+  width: 178px;
+}
+
+.dropdown-menu .dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px 20px;
+
+  border-bottom: 1px solid #ddd;
+}
 .header_slider_parent {
   position: relative;
 }
@@ -379,6 +418,7 @@ body.modal-open .mm-slideout {
 
 .about_atta_holding {
   position: relative;
+  margin-bottom: 5%;
 }
 
 .about_atta_holding .overlay2 {
@@ -393,7 +433,7 @@ body.modal-open .mm-slideout {
   font-size: 50px;
 }
 
-.about_atta_holding .container {
+.about_atta_holding .container-fluid {
   position: relative;
   z-index: 1;
 }
@@ -412,15 +452,30 @@ body.modal-open .mm-slideout {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
+.header_slider_parent {
+  position: relative;
+}
+
 .header_slider_parent .header_slider .slick-arrow {
   z-index: 999;
   width: 64px;
   height: 64px;
   border: 1px solid #fff;
   border-radius: 50%;
-  margin-right: 71px;
-  margin-left: 71px;
+  position: absolute;
+  margin-right: 15px;
+  margin-left: 15px;
+  background: transparent;
 }
+
+.header_slider_parent .slick-prev {
+  left: 200px;
+}
+
+.header_slider_parent .slick-next {
+  right: 20px;
+}
+
 .slider_item .overlay h3 {
   z-index: 1000 !important;
 }
@@ -3836,8 +3891,13 @@ body.modal-open .mm-slideout {
   color: #243770;
   text-decoration: underline;
 }
-
+.video-icon i {
+  font-size: 15px;
+  margin-bottom: 16px;
+  margin-right: 6px;
+}
 /* ================================================================ */
+
 @media (max-width: 1500px) {
   .news_content .news_date span {
     font-size: 0.8rem;
@@ -4047,6 +4107,7 @@ body.modal-open .mm-slideout {
     margin-bottom: 40px;
     padding-bottom: 45px;
     margin-right: 10px;
+    text-align: center;
   }
   .video-icon .fas {
     margin-bottom: 15px;
@@ -4529,14 +4590,28 @@ button:hover {
   padding: 2rem;
   border-radius: 30px;
   height: 300;
+  margin-top: 8%;
 }
 .col-md-3 .part {
   padding-bottom: 10px;
   position: relative;
 }
-
+.section_header h6 {
+  margin-right: 17px;
+}
 .social li {
-  margin-right: 10px;
+  margin: 10px;
+}
+.social li:last-child {
+  margin-right: 0;
+}
+.CSR-efforts {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 30px;
+}
+.CSR-efforts .card-title {
+  padding-left: 22px;
 }
 
 .col-md-3:not(:last-child) .part::after {
@@ -4583,6 +4658,7 @@ hr {
   position: relative;
   margin-top: 8%;
   background-color: #f4f4f6;
+  margin-bottom: 5%;
 }
 
 .video-section img {
@@ -4701,17 +4777,6 @@ hr {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 30px;
-}
-
-.image-grid img {
-  width: 100%;
-  height: 80%;
-  padding: 2%;
-}
 .certifications {
   background-color: black;
 }
@@ -4732,6 +4797,28 @@ hr {
   border-radius: 25px;
   margin-bottom: 20px;
   margin-top: 15px;
+}
+.separator8 {
+  display: inline-block;
+  border: 1px solid #243770;
+  color: #243770;
+  width: 4%;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.separator9 {
+  display: inline-block;
+  border: 1px solid #243770;
+  color: #243770;
+  width: 2%;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.seprator-csr {
+  padding-left: 22px;
 }
 .card {
   background-color: #fafbfa;
@@ -4891,7 +4978,7 @@ textarea {
   background-color: #f4f4f6;
 }
 
-.container.get_toutch {
+.get_toutch {
   background-color: #ffffff;
   padding: 40px;
   border-radius: 30px;
@@ -5040,7 +5127,7 @@ textarea::placeholder {
   margin-left: 12px;
 }
 .input-group-append {
-  margin-left: -1px;
+  margin-left: -10px;
   margin-right: 30px;
   margin-top: 5px;
 }
@@ -5056,7 +5143,7 @@ textarea::placeholder {
   padding-top: 4%;
   padding-bottom: 4%;
   height: 269px;
-  width: 100%;
+  width: auto;
 }
 
 .custom-container h4,
@@ -5124,7 +5211,18 @@ textarea::placeholder {
 .mission-image-container:hover .mission-layer .paragraph {
   opacity: 1;
 }
-
+.mission-image-one {
+  width: 902px;
+  height: 601px;
+}
+.mission-image-Two {
+  width: 860px;
+  height: 600px;
+}
+.mission-image-three {
+  width: 600px;
+  height: 600px;
+}
 .mission-layer .paragraph {
   position: absolute;
   bottom: 40px;
@@ -5214,12 +5312,13 @@ textarea::placeholder {
 .mission-image-container {
   position: relative;
   overflow: hidden;
+  margin-right: 0px;
+  margin-left: 0px;
 
-  width: 433px;
-  height: 460px;
-  margin: 0 5px;
+  height: 600px;
+  margin: 0 0px;
   display: inline-block;
-  object-fit: fill;
+  object-fit: cover;
 }
 .mission-image-container img {
   width: 100%;
@@ -5280,14 +5379,18 @@ textarea::placeholder {
 .csr-efforts-section {
   position: relative;
   overflow: hidden;
-  width: 370px;
-  height: 380px;
+  width: 455px;
+  height: 460px;
 }
 .csr-efforts-section img {
   border-radius: 30px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.text-layer span {
+  font-size: 30px;
+  font-weight: 500;
 }
 .csr-efforts-overlay {
   position: absolute;
@@ -5298,24 +5401,30 @@ textarea::placeholder {
 }
 .overlay-text1 {
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 400px;
+  padding-left: 10px;
 }
 .overlay-text {
-  margin-bottom: 5px;
-  font-size: 16px;
+  margin-bottom: 12px;
+  font-size: 20px;
   font-weight: 700;
+  padding: 10px;
 }
 .society-text {
   position: absolute;
   top: 10px;
   left: 10px;
   background-color: #24377033;
-  color: white;
-  padding: 5px 10px;
+  color: #ffffff;
+  padding: 5px 15px;
   border-radius: 15px;
+  text-align: center;
   font-size: 14px;
   margin-left: 7px;
   margin-top: 7px;
+  width: 18%;
+  z-index: 1;
 }
 
 .base-layer {
@@ -5369,6 +5478,7 @@ textarea::placeholder {
   margin-right: 7px;
   margin-top: 7%;
   color: #243770;
+  padding-left: 10px;
 }
 
 .csr-efforts-section:hover .society-text * {
@@ -5377,6 +5487,8 @@ textarea::placeholder {
 }
 .csr-efforts-section:hover .society-text {
   display: block;
+  background-color: #243770;
+  color: #ffffff;
 }
 
 .csr-efforts-section:hover .society-text * {
@@ -5389,9 +5501,9 @@ textarea::placeholder {
   display: block;
   z-index: 2;
 }
-.container .our-mission {
+.container-fluid .our-mission {
   width: 100%;
-  height: 1000px;
+  height: 600px;
   margin-bottom: -22%;
 
   margin-top: 6%;
@@ -5571,7 +5683,9 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
 }
-
+.content-section {
+  margin-top: 30%;
+}
 .layer,
 .header_slider,
 .footer {
@@ -5598,16 +5712,61 @@ textarea::placeholder {
 }
 
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .image-grid img {
-  width: 100%;
-  height: 80%;
-  padding: 2%;
+  width: calc(16.66666666666667% - 30px);
+  margin-bottom: 10px;
 }
+
+.image-grid img:last-child {
+  margin-right: 0;
+}
+
+.p-100 {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .get_in_touch {
+    padding: 20px;
+    background-color: #f4f4f6;
+  }
+
+  .get_in_touch h3 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+
+  .get_in_touch p {
+    font-size: 16px;
+  }
+
+  .get_in_touch .form-control {
+    font-size: 16px;
+  }
+
+  .get_in_touch button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .get_in_touch .separator6 {
+    margin: 20px 0;
+  }
+
+  .get_in_touch h2 {
+    font-size: 20px;
+  }
+
+  .get_in_touch .col-sm-5 {
+    margin-top: 10px;
+  }
+}
+
 @media screen and (min-width: 375px) and (max-width: 667px) {
   .mission-image-container {
     height: auto;
@@ -5626,7 +5785,9 @@ textarea::placeholder {
     margin-left: 10px;
     padding-right: 5px;
   }
-
+  .see-all-link1 {
+    margin-bottom: 30px;
+  }
   .mission-layer p {
     position: absolute;
     bottom: 10px;
@@ -5647,7 +5808,9 @@ textarea::placeholder {
   .container {
     flex-direction: column;
   }
-
+  .mission-image-container {
+    margin-bottom: 20px;
+  }
   .part {
     width: 100%;
   }
@@ -5662,10 +5825,15 @@ textarea::placeholder {
       display: none;
     }
   }
-
+  .p-100 {
+    padding: 20px;
+  }
   .col-md-3 {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .content-section {
+    margin-top: 40px;
   }
 
   .part {
@@ -5682,6 +5850,16 @@ textarea::placeholder {
   .text-container {
     width: 100%;
     padding: 10px;
+  }
+  .form-control {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .updates .input-group .form-control {
+      font-size: 18px;
+      width: 50%;
+    }
   }
 
   .text-slider p {
@@ -5739,7 +5917,10 @@ textarea::placeholder {
   .container-fluid.certifications.mt-5 .see-all-wrapper {
     text-align: center;
   }
-
+  .video-section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
   .separator1 {
     width: 7%;
     text-align: left;
@@ -5748,6 +5929,12 @@ textarea::placeholder {
   .separator2 {
     width: 4%;
     margin-bottom: 10px;
+  }
+  .society-text {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
   .custom-button {
     width: 38%;
@@ -5794,11 +5981,11 @@ textarea::placeholder {
   #message {
     width: 97%;
   }
-  .container.custom-container .row {
+  .container-fluid.custom-container .row {
     flex-direction: column;
   }
 
-  .container.custom-container .col-md-6 {
+  .container-fluid.custom-container .col-md-6 {
     width: 100%;
   }
   .input-group-append .btn {
@@ -5807,7 +5994,18 @@ textarea::placeholder {
   .csr-slider2 {
     flex-wrap: wrap;
   }
+  image-grid .image-grid {
+    flex-wrap: wrap;
+  }
 
+  .image-grid {
+    width: 100%;
+  }
+
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .col-md-4.csr-efforts-section {
     width: 50%;
     margin-bottom: 15px;
@@ -5871,6 +6069,17 @@ textarea::placeholder {
 
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      .image-grid {
+        flex-direction: column;
+      }
+
+      .image-grid img {
+        width: 100%;
+        margin-bottom: 15px;
+      }
     }
 
     @media only screen and (max-width: 768px) {
