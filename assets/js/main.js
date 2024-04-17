@@ -527,6 +527,40 @@ $(document).ready(function() {
 
 
 
+$(document).ready(function(){
+  if (window.matchMedia("(max-width: 768px)").matches) {
+  $('.cer-slide').slick({
+      dots: false,
+      infinite: true,
+      speed: 400,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      prevArrow: $('.prev-arrow'),
+      nextArrow: $('.next-arrow'),
+      centerMode: false,
+      centerPadding: '25px', 
+      responsive: [
+          {
+              breakpoint: 992,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+              }
+          },
+          {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+              }
+          }
+      ]
+      
+  });
+}
+});
+
 
 
 $(document).ready(function(){
@@ -540,7 +574,7 @@ $(document).ready(function(){
       prevArrow: $('.prev-arrow'),
       nextArrow: $('.next-arrow'),
       centerMode: true,
-      centerPadding: '25px', 
+      centerPadding: '20px', 
       responsive: [
           {
               breakpoint: 992,
@@ -588,10 +622,46 @@ window.addEventListener('scroll', function() {
   const navbar = document.querySelector('.custom_navbar');
   const scrollY = window.scrollY; // Get scroll position
 
-  if (scrollY > 50) { // Adjust this value to determine scroll amount for change
+  if (scrollY > 0) { // Adjust this value to determine scroll amount for change
     navbar.classList.add('scrolled');
   } else {
     navbar.classList.remove('scrolled');
   }
 });
+
+
+
+$(document).ready(function() {
+  $('.slick-toggle').on('click', function() {
+    var targetId = $(this).data('slick-target');
+    // Hide all slick contents before showing the clicked one
+    $('.slick-content').addClass('d-none');
+    $(targetId).removeClass('d-none');
+  });
+});
+
+const accordionToggles = document.querySelectorAll('.accordion-button');
+
+for (const toggle of accordionToggles) {
+  toggle.addEventListener('click', (event) => {
+    const currentCollapse = event.target.nextElementSibling;
+    const isExpanded = currentCollapse.classList.contains('show');
+
+    // Toggle active accordion item
+    currentCollapse.classList.toggle('show');
+
+    // Close other open accordions (optional)
+    accordionToggles.forEach(otherToggle => {
+      if (otherToggle !== toggle) {
+        const otherCollapse = otherToggle.nextElementSibling;
+        otherCollapse.classList.remove('show');
+      }
+    });
+  });
+}
+
+
+
+
+
 
