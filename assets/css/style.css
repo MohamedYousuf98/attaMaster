@@ -6799,9 +6799,8 @@ input[type="text"].search::placeholder {
     justify-content: initial;
     margin: 0 auto;
   }
-.product-add-btn{
-  
-}
+  .product-add-btn {
+  }
   .product-item {
     width: 100%;
     margin-left: 6%;
@@ -6829,4 +6828,15 @@ input[type="text"].search::placeholder {
       display: none;
     }
   }
+}
+
+.fa-solid {
+  margin-left: 10px;
+  color: #5d6160;
+}
+.cart-text {
+  color: #5d6160;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 2px;
 }
