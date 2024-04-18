@@ -664,4 +664,36 @@ for (const toggle of accordionToggles) {
 
 
 
-
+$(document).ready(function(){
+  if (window.matchMedia("(max-width: 768px)").matches) {
+  $('.product-slide').slick({
+      dots: false,
+      infinite: true,
+      speed: 400,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      prevArrow: $('.prev-arrow'),
+      nextArrow: $('.next-arrow'),
+      centerMode: false,
+      centerPadding: '40px', 
+      responsive: [
+          {
+              breakpoint: 992,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+              }
+          },
+          {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+              }
+          }
+      ]
+      
+  });
+}
+});

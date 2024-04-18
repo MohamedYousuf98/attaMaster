@@ -6599,3 +6599,234 @@ input[type="text"].search::placeholder {
     margin-top: 37%;
   }
 }
+
+/* ============================Category-Section==================================== */
+
+.card-contain {
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  background-color: #f4f4f6;
+}
+.product-name::placeholder {
+  color: #1d1f22;
+  font-size: 15px;
+  font-weight: 400;
+
+  z-index: 2;
+}
+.product-item {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 20px;
+  background-color: #f4f4f6;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 105%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.product-title {
+  font-weight: 700px;
+  font-size: 17px;
+  line-height: 21.86px;
+  color: #1d1f22;
+
+  margin-bottom: 10px;
+}
+.product-item input,
+.product-item button {
+  margin: 0 3px;
+}
+.product-price {
+  color: #999;
+  margin-bottom: 30px;
+}
+.product-name {
+  border: 1px solid rgba(93, 97, 96, 0.5);
+  border-radius: 10px;
+
+  background-color: transparent;
+  height: 55px;
+  width: 100%;
+  margin-bottom: 0px;
+  color: #1d1f22;
+  padding: 15px;
+}
+.product-add-btn {
+  background-color: #243770;
+  color: #ffffff;
+  border: none;
+  margin-top: 10px !important;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 55px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.86px;
+}
+.product-add-btn:hover {
+  background-color: #092474;
+  color: #007bff;
+}
+
+.pagination {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-link {
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.product-title,
+.product-price {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.price-circle {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  line-height: 20px;
+  color: #000000;
+  border: 1px solid #d9d9d9;
+}
+
+.price-circle span {
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  line-height: 20px;
+  color: #000000;
+}
+.product-price-spacer {
+  display: inline-block;
+  width: 10px;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 21.86px;
+  color: #5d6160;
+  margin-left: 4px;
+}
+
+.pagination-word {
+  margin-right: 8px;
+}
+
+.page-item .page-link {
+  color: #9c9c9c;
+  background-color: transparent !important;
+  border: none;
+}
+
+.page-item.active .page-link {
+  background-color: #243770 !important;
+  color: #ffffff !important;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-container .pagination {
+  margin: 0;
+}
+
+.pagination-container .pagination .page-item:first-child {
+  margin-right: auto;
+}
+
+.pagination-container .pagination .page-item:last-child {
+  margin-left: auto;
+}
+.pagination-word-left {
+  color: #9c9c9c;
+  font-size: 15px;
+  font-weight: 500px;
+  line-height: 20px;
+}
+.fa-arrow-left {
+  color: #9c9c9c;
+  width: 10px;
+  height: 10px;
+}
+.pagination-word-right {
+  color: #221f1f;
+  font-size: 15px;
+  font-weight: 500px;
+  line-height: 20px;
+}
+.fa-arrow-right {
+  color: #221f1f;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+}
+.pagination-container .pagination {
+  border-top: 1px solid rgba(93, 97, 96, 0.1);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.charts {
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .pagination-container {
+    justify-content: initial;
+    margin: 0 auto;
+  }
+.product-add-btn{
+  
+}
+  .product-item {
+    width: 100%;
+    margin-left: 6%;
+  }
+  .pagination-container {
+    display: none;
+  }
+  .add-to-chart {
+    margin-top: 12%;
+  }
+  .get_toutch {
+    margin-top: 2%;
+  }
+}
+@media (max-width: 576px) {
+  .pagination li.page-item:not(:first-child) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media (max-width: 768px) {
+    .pagination-container {
+      display: none;
+    }
+    .page-item {
+      display: none;
+    }
+  }
+}
