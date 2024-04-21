@@ -1546,19 +1546,19 @@ body.modal-open .mm-slideout {
   justify-content: center;
   align-items: center;
   background: #2e55a4;
-  border: 1px solid #2e55a4;
+
   width: -moz-fit-content;
   width: fit-content;
-  color: #fff;
+  color: #ffffff;
   margin-left: auto;
   border-radius: 60px;
 }
 .our_portofilio .download_btn a span {
   margin-right: 16px;
 }
-.our_portofilio .download_btn a:hover {
-  background-color: rgba(46, 85, 164, 0.9);
-  border-color: rgba(46, 85, 164, 0.9);
+.our_portofilio .download_btn :hover {
+  background-color: #0039b5;
+  color: #ffffff;
 }
 
 .project_links {
