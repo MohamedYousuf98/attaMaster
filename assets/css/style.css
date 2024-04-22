@@ -7256,7 +7256,17 @@ input[type="text"].search::placeholder {
   color: #1d1f22;
   font-weight: 700;
 }
+.allproducts-title {
+  font-size: 32px;
+  color: #1d1f22;
+  font-weight: 700;
+}
 .product-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.allproduct-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -7323,10 +7333,18 @@ input[type="text"].search::placeholder {
   .products-title {
     font-size: 24px;
   }
+  .allproducts-title {
+    font-size: 24px;
+  }
   .three-words {
     flex-direction: column;
   }
   .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .allproduct-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -7386,5 +7404,89 @@ input[type="text"].search::placeholder {
 
   .client-logo {
     height: auto;
+  }
+}
+
+.allproduct-header {
+  background-size: cover;
+}
+
+.allproduct-item .adv_bg {
+  height: 533px;
+  width: 100%;
+}
+
+.allproduct-header .img-content {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.allproduct-header .img-content h2 {
+  font-size: 48px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.allproduct-header .img-content p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #f4f4f6;
+  text-align: center;
+  opacity: 70%;
+}
+
+.allproduct-header .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 533px;
+  background-color: #000000cc;
+  opacity: 80%;
+}
+.allproducts-section p {
+  background-color: #52a9dc;
+  padding: 15px;
+  border-radius: 10px;
+
+  text-align: left;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.product {
+  margin-bottom: 60px;
+}
+.product img {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .product {
+    flex: 1 0 calc(50% - 10px);
+  }
+  .allproducts-title {
+    text-align: center;
+  }
+  .graphic-design-text,
+  .Traditional-Marketing-text {
+    text-align: center;
   }
 }

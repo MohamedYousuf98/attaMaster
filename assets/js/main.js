@@ -662,8 +662,6 @@ for (const toggle of accordionToggles) {
 
 
 
-
-
 $(document).ready(function(){
   if (window.matchMedia("(max-width: 768px)").matches) {
   $('.product-slide').slick({
@@ -697,5 +695,6 @@ $(document).ready(function(){
   });
 }
 });
+
 
 
