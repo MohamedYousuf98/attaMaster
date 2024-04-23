@@ -7775,6 +7775,9 @@ input[type="text"].search::placeholder {
   .Items .number {
     line-height: 1.1;
   }
+  .Items .number {
+    line-height: 1.1 !important;
+  }
   .cart-page {
     width: 100%;
     padding: 0 10px;
