@@ -7776,7 +7776,7 @@ input[type="text"].search::placeholder {
     line-height: 1.1;
   }
   .Items .number {
-    line-height: 1.1 !important;
+    line-height: 1 !important;
   }
   .cart-page {
     width: 100%;
