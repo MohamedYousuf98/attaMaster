@@ -7772,8 +7772,8 @@ input[type="text"].search::placeholder {
 }
 
 @media (max-width: 767px) {
-  .three-number {
-    padding-top: 20px;
+  .Items .number {
+    line-height: 1.1;
   }
   .cart-page {
     width: 100%;
