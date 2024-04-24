@@ -6801,7 +6801,7 @@ input[type="text"].search::placeholder {
   line-height: 20px;
   color: #000000;
 }
-.product-price-spacer {
+.product-quantity {
   display: inline-block;
   width: 10px;
   font-size: 16px;
@@ -7596,7 +7596,6 @@ input[type="text"].search::placeholder {
 }
 
 .quantity {
-  border-radius: 100px;
   text-align: center;
 }
 
@@ -7624,15 +7623,18 @@ input[type="text"].search::placeholder {
 .quantity button,
 .quantity span {
   display: inline-block;
-  margin: 0 9px;
+  margin: 0 7px;
   margin-top: 50px;
 }
 .quantity-section .quantity :hover {
   background-color: #243770;
   color: #ffffff;
 }
+.quantity-section {
+  padding-left: 12px;
+}
 .quantity button {
-  border-radius: 100px;
+  border-radius: 100% !important;
   border: 1px solid #d9d9d9;
   background-color: none;
   font-size: 18px;
@@ -7642,10 +7644,16 @@ input[type="text"].search::placeholder {
   font-size: 17px;
   color: #5d6160;
   font-weight: 400;
+  border-radius: 100px;
 }
 .select-all-image {
   width: 95px;
   height: 140px;
+}
+.price-circle,
+.product-quantity,
+.price-circle {
+  cursor: pointer;
 }
 
 .checkbox-icon {
@@ -7660,10 +7668,7 @@ input[type="text"].search::placeholder {
   margin-bottom: 3px;
 }
 .check-mark {
-  font-size: 8px;
-  color: #1d1f22;
-  margin-right: 4px;
-  margin-bottom: 2px;
+  background-color: red;
 }
 .cart-page {
   margin: 0 5px;
@@ -7701,9 +7706,6 @@ input[type="text"].search::placeholder {
   margin-top: 53px;
 }
 
-.quantity-text h5 {
-  padding-left: 7.3rem;
-}
 .dimensions-text h5 {
   padding-left: 2rem;
 }
@@ -7767,7 +7769,9 @@ input[type="text"].search::placeholder {
     text-align: center;
   }
   .quantity button {
-    padding: 10px 10px 10px 10px;
+    border-radius: 100% !important;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -7787,6 +7791,9 @@ input[type="text"].search::placeholder {
   }
   .three-numbers {
     padding-top: 20px;
+  }
+  .quantity-text h5 {
+    padding-left: 2rem;
   }
   .cart-page .col-md-3 {
     flex: 0 0 50%;
