@@ -698,3 +698,76 @@ $(document).ready(function(){
 
 
 
+
+const quantityButtons = document.querySelectorAll('.quantity button');
+
+for (const button of quantityButtons) {
+  button.addEventListener('click', handleQuantityChange);
+}
+
+function handleQuantityChange(event) {
+  const button = event.target;
+  const quantitySpan = button.parentNode.querySelector('span');
+  let currentQuantity = parseInt(quantitySpan.textContent);
+
+  if (button.textContent === '-') {
+    if (currentQuantity > 1) {
+      currentQuantity--;
+    }
+  } else if (button.textContent === '+') {
+    currentQuantity++;
+  }
+
+  quantitySpan.textContent = currentQuantity;
+}
+
+// Get references to all quantity elements and buttons (using querySelectorAll)
+const quantityElements = document.querySelectorAll('.product-quantity');
+const decreaseButtons = document.querySelectorAll('.price-circle.decrease-quantity');
+const increaseButtons = document.querySelectorAll('.price-circle.increase-quantity');
+
+// Function to increase quantity (works for any quantity element)
+function increaseQuantity(event) {
+  const button = event.target; // Get the button that triggered the click
+  const quantityElement = button.parentNode.querySelector('.product-quantity'); // Find the corresponding quantity element
+
+  let currentQuantity = parseInt(quantityElement.textContent);
+  currentQuantity++;
+  quantityElement.textContent = currentQuantity;
+
+  // Update the button states for the clicked product slide
+  const decreaseButton = button.parentNode.querySelector('.price-circle.decrease-quantity');
+  if (currentQuantity === 1) {
+    decreaseButton.classList.add('unclickable');
+  } else {
+    decreaseButton.classList.remove('unclickable');
+  }
+}
+
+
+
+// Function to decrease quantity (works for any quantity element)
+function decreaseQuantity(event) {
+  const button = event.target;
+  const quantityElement = button.parentNode.querySelector('.product-quantity');
+
+  let currentQuantity = parseInt(quantityElement.textContent);
+  if (currentQuantity > 1) {
+    currentQuantity--;
+  }
+  quantityElement.textContent = currentQuantity;
+
+  // Update the button states for the clicked product slide
+  const increaseButton = button.parentNode.querySelector('.price-circle.increase-quantity');
+  if (currentQuantity === 1) {
+    increaseButton.classList.add('unclickable');
+  } else {
+    increaseButton.classList.remove('unclickable');
+  }
+}
+
+// Add event listeners to all buttons
+for (let i = 0; i < decreaseButtons.length; i++) {
+  decreaseButtons[i].addEventListener("click", decreaseQuantity);
+  increaseButtons[i].addEventListener("click", increaseQuantity);
+}
